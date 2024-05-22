@@ -21,18 +21,18 @@
                 "vt": "str"
             }
         ],
-        "repeat": "10",
+        "repeat": "",
         "crontab": "",
-        "once": true,
+        "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 250,
+        "x": 240,
         "y": 220,
         "wires": [
             [
-                "c086d74afab299b4"
+                "32196f13a44910d0"
             ]
         ]
     },
@@ -49,8 +49,27 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 580,
+        "x": 700,
         "y": 220,
         "wires": []
+    },
+    {
+        "id": "32196f13a44910d0",
+        "type": "template",
+        "z": "537a35828e054965",
+        "name": "",
+        "field": "payload",
+        "fieldType": "msg",
+        "format": "handlebars",
+        "syntax": "mustache",
+        "template": "This is the payload: {{payload}} !",
+        "output": "str",
+        "x": 480,
+        "y": 220,
+        "wires": [
+            [
+                "c086d74afab299b4"
+            ]
+        ]
     }
 ]
